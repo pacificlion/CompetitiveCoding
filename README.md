@@ -1,4 +1,4 @@
-# Competitive programming codes
+# Competitive coding
 
 ## LeetCode
 
