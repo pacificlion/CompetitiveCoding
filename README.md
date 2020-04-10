@@ -3,7 +3,7 @@
 ## LeetCode
 
 |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
-|-----|----------------|---------------|--------|-------------|-------------
+|-----|----------------|---------------|-------------|-------------
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_876.java) |Easy|
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_844.java) |Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_283.java)|Easy|
