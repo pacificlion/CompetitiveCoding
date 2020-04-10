@@ -12,3 +12,12 @@
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_122.java)|Easy | Greedy
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_53.java)|Easy| Array
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_49.java)|Medium| HashMap
+
+
+## CodeForces
+
+|  #  |      Title     |   Solutions   | Difficulty  | Tag                   
+|-----|----------------|---------------|-------------|-------------
+|2|[Princesses And Princes](https://codeforces.com/contest/1327/problem/B)|[Solution](../master/src/main/java/com/pacificlion/codeforces/PrincessesAndPrinces.java) |Easy|greedy,graph
+|1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Solution](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Easy|math
+
