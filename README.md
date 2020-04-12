@@ -15,6 +15,7 @@ I am adding my competitive coding solutions to track my progress.
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_347.java)|Medium| HashTable, Heap, Bucket Sort, NON_OPTIMUM
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_283.java)|Easy|
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_202.java)|Easy
+|155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Solution](../master/src/main/java/com/fishercoder/solutions/_155.java)|Easy| Stack, TEST_LEFT
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_136.java)|Easy | Bit Manipulation
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_122.java)|Easy | Greedy
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_53.java)|Easy| Array
