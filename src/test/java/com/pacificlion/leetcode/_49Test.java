@@ -1,6 +1,7 @@
 package com.pacificlion.leetcode;
 
 import static org.junit.Assert.assertEquals;
+import com.pacificlion.leetcode.utilities.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,12 +28,26 @@ public class _49Test {
 	  public void test1() {
 	    words = new String[] {"eat", "tea", "tan", "ate", "nat", "bat"};
 	    expected = new ArrayList<>();
+	    expected.add(Arrays.asList("bat"));
+	    expected.add(Arrays.asList("tan","nat"));
 	    expected.add(Arrays.asList("eat","ate", "tea"));
-	    expected.add(Arrays.asList("tan"));
-	    expected.add(Arrays.asList("nat","bat"));
+	    
 	    actual = solution.groupAnagrams(words);
 	    assertEquals(expected.size(), actual.size());
-	    assertEquals(expected.containsAll(actual), actual.containsAll(expected));
+	    
+	    for(int i = 0; i<expected.size();i++) {
+	    	int size = actual.get(i).size();
+	    	switch(size){
+	    	case 1: assertEquals(true, CollectionUtils.compareEqual(actual.get(i),expected.get(0)));
+	    			break;
+	    	case 2: assertEquals(true, CollectionUtils.compareEqual(actual.get(i),expected.get(1)));
+	    			break;
+	    	case 3: assertEquals(true, CollectionUtils.compareEqual(actual.get(i),expected.get(2)));
+	    			break;
+	    	}
+	    }
 	  }
+	  
+	  
 
 }
