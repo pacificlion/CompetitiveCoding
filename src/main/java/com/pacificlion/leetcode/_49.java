@@ -27,7 +27,11 @@ import java.util.Map;
  */
 public class _49 {
 
-	public static class Solution {
+	/**
+	 * used string based hashing
+	 *
+	 */
+	public static class Solution1 {
 		public List<List<String>> groupAnagrams(final String[] strs) {
 			if (strs == null || strs.length == 0) {
 				return new ArrayList<List<String>>();
@@ -55,6 +59,38 @@ public class _49 {
 				result.get(key).add(str);
 			}
 			return new ArrayList<List<String>>(result.values());
+		}
+	}
+
+	/**
+	 * adding efficient way of hashing using prime numbers instead of String based
+	 * hashing used in {@link Solution1}}
+	 *
+	 */
+	public static class Solution2 {
+		private int[] primes = new int[] { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+				73, 79, 83, 89, 97, 101 };
+
+		public List<List<String>> groupAnagrams(String[] strs) {
+
+			if (strs == null || strs.length == 0)
+				return new ArrayList<>();
+
+			Map<Integer, List<String>> result = new HashMap<>();
+			for (String str : strs) {
+				Integer key = 1;
+				for (char c : str.toCharArray()) {
+					key *= primes[c - 'a'];
+				}
+				if (result.get(key) == null) {
+					result.put(key, new ArrayList<>());
+				}
+				result.get(key).add(str);
+
+			}
+
+			return new ArrayList<List<String>>(result.values());
+
 		}
 	}
 }
