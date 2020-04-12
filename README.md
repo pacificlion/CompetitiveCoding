@@ -20,6 +20,7 @@ I am adding my competitive coding solutions to track my progress.
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_122.java)|Easy | Greedy
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_53.java)|Easy| Array
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/_49.java)|Medium| HashMap
+||[Counting Elements](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/)|[Solution](../master/src/main/java/com/pacificlion/leetcode/CountingElements.java)|Easy| Array
 
 
 ## CodeForces
