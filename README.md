@@ -28,7 +28,7 @@ I am adding my competitive coding solutions to track my progress. I got the idea
 
 |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
 |-----|----------------|---------------|-------------|-------------
-|2|[Princesses And Princes](https://codeforces.com/contest/1327/problem/B)|[Solution](../master/src/main/java/com/pacificlion/codeforces/PrincessesAndPrinces.java) |Div 2B|greedy,graph
-|1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Solution](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Div 2A|math
+|2|[Princesses And Princes](https://codeforces.com/contest/1327/problem/B)|[Solution](../master/src/main/java/com/pacificlion/codeforces/PrincessesAndPrinces.java) |Div 2B, *1300|greedy, graph
+|1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Solution](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Div 2A, *1100|math
 
 
