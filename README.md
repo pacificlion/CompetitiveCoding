@@ -30,7 +30,3 @@ I am adding my competitive coding solutions to track my progress.
 |2|[Princesses And Princes](https://codeforces.com/contest/1327/problem/B)|[Solution](../master/src/main/java/com/pacificlion/codeforces/PrincessesAndPrinces.java) |Div 2B, *1300|greedy, graph
 |1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Solution](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Div 2A, *1100|math
 
-## Credits
-
-I got the idea of maintaining my competitive coding solutions after seeing [fishercoder1534](https://github.com/fishercoder1534/)'s repo [Leetcode](https://github.com/fishercoder1534/Leetcode). Please star his repository for his latest solutions to leetcode problems and his video description for the problems.
-
