@@ -1,5 +1,5 @@
 # Competitive coding
-I am adding my competitive coding solutions to track my progress. 
+A repository containing all my competitive coding solutions.
 
 ## LeetCode
 
