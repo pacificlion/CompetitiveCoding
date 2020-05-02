@@ -1,13 +1,13 @@
 package com.pacificlion.leetcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
+import java.util.PriorityQueue;
+import java.util.TreeMap;
 
 /**
  * 
@@ -37,38 +37,93 @@ import java.util.stream.Collectors;
  *
  */
 public class _347 {
-	public static class Solution {
-		public List<Integer> topKFrequent(int[] nums, int k) {
-			Map<Integer, Integer> map = new HashMap<>();
+	
+	//List based approach
+	public static class Solution1 {
+	    public int[] topKFrequent(int[] nums, int k) {
+	 			Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
 
-			for (int num : nums) {
-				map.put(num, map.getOrDefault(num, 0) + 1);
-			}
-			map = sortByValue(map, false);
+	 			for (int num : nums) {
+	                 hashmap.put(num,hashmap.getOrDefault(num, 0) + 1);
+	             }
+	 			LinkedList<Integer>[] bucket = new LinkedList[nums.length+1];
+	         for(Integer key: hashmap.keySet()){
+	             if(bucket[hashmap.get(key)]==null){
+	                 bucket[hashmap.get(key)] = new LinkedList<>();
+	             }
+	             bucket[hashmap.get(key)].add(key);
+	         }
+	 			int[] result = new int[k];
+	         int l=0;
+	          for(int i = bucket.length-1; i>=0; i--){
+	              
+	              if(bucket[i]!=null){
+	                  for(Integer val: bucket[i]){
+	                      if(l==k) break;
+	                      result[l++] = val;
+	                  }
+	              }
+	               if(l==k) break;
+	          }
 
-			List<Integer> result = new ArrayList<>();
+	 			return result; 
+	     }
+	 }
+	//max heap based approach
+	public static class Solution2 {
+	    public int[] topKFrequent(int[] nums, int k) {
+				Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
 
-			map.forEach((key, value) -> {
-				if (result.size() < k)
-					result.add(key);
-			});
+				for (int num : nums) {
+	                hashmap.put(num,hashmap.getOrDefault(num, 0) + 1);
+	            }
+	       
+	        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<Map.Entry<Integer, Integer>>((a,b)->{
+	            return b.getValue() -a.getValue();
+	        });
+	        
+	        for(Map.Entry<Integer, Integer> entry: hashmap.entrySet()){
+	            maxHeap.add(entry);
+	        };
+	        
+	        int l = -1;
+	        int[] result = new int[k];
+	        while(++l<k){
+	            result[l] = maxHeap.poll().getKey();
+	        }
 
-			return result;
-
-		}
-
-		private Map<Integer, Integer> sortByValue(Map<Integer, Integer> unsortMap, final boolean order) {
-			List<Entry<Integer, Integer>> list = new LinkedList<>(unsortMap.entrySet());
-
-			// Sorting the list based on values
-			list.sort((o1, o2) -> order
-					? o1.getValue().compareTo(o2.getValue()) == 0 ? o1.getKey().compareTo(o2.getKey())
-							: o1.getValue().compareTo(o2.getValue())
-					: o2.getValue().compareTo(o1.getValue()) == 0 ? o2.getKey().compareTo(o1.getKey())
-							: o2.getValue().compareTo(o1.getValue()));
-			return list.stream()
-					.collect(Collectors.toMap(Entry::getKey, Entry::getValue, (a, b) -> b, LinkedHashMap::new));
-
-		}
+				return result; 
+	    }
 	}
+	//tree map based approach
+	public static class Solution3 {
+	    public int[] topKFrequent(int[] nums, int k) {
+	        Map<Integer, List<Integer>> treemap = new TreeMap<Integer,List<Integer>>(Collections.reverseOrder());
+	 			Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
+
+	 			for (int num : nums) {
+	                 hashmap.put(num,hashmap.getOrDefault(num, 0) + 1);
+	             }
+	         for(Integer key: hashmap.keySet()){
+	             List<Integer> list = treemap.getOrDefault(hashmap.get(key), new ArrayList<>());
+	             list.add(key);
+	 			treemap.put(hashmap.get(key),list);
+	         }
+	 			int[] result = new int[k];
+	             int l =0;
+	         
+	          for(Integer key: treemap.keySet()){
+	              
+	 			 for(Integer val:treemap.get(key) ){
+	                 if(l==k)break;
+	                 result[l++]= val; 
+	              }
+	              if(l==k)break;
+	              
+	                 
+	         }
+
+	 			return result; 
+	     }
+	 }
 }

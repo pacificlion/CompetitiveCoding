@@ -28,7 +28,7 @@ A repository containing all my competitive coding solutions.
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_560.java) |Medium | Array, Hash Table, RETRY   
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_543.java) |Easy | Tree/DFS/Recursion, TEST_LEFT
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_525.java)|Easy| Hash Table
-|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_347.java)|Medium| HashTable, Heap, Bucket Sort, NON_OPTIMUM
+|347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_347.java)|Medium| HashTable, Heap, Bucket Sort
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_283.java), [Python](../master/leetcode/python/_283.py)|Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_278.java)|Easy| Binary Search, INTERACTIVE
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_238.java), [Python](../master/leetcode/_238.py)|Easy|Arrays
