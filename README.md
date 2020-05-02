@@ -13,7 +13,7 @@ A repository containing all my competitive coding solutions.
 |1424|[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1424_.java)|Medium| Array, Sort, NON_OPTIMUM
 |1419|[Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1419.java) |Medium| String
 |1417|[Reformat the String](https://leetcode.com/problems/reformat-the-string/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1417.java) |Easy|String
-|1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1410.java) |Medium|String, Stack, NON_OPTIMUM|
+|1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1410.java) |Medium|String, Stack|
 |1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1409.java) |Medium|Array|
 |1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1408.java) |Easy|String|
 |1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1161.java) |Medium|Tree, Graph, TEST_LEFT|

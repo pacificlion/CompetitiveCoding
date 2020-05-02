@@ -1,5 +1,8 @@
 package com.pacificlion.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 1410. HTML Entity Parser
  * 
@@ -62,16 +65,65 @@ package com.pacificlion.leetcode;
  *
  */
 public class _1410 {
-	public static class Solution {
-		String entityParser(String text) {
-			// replacing '&amp' with temporary pattern which will be replaced in last
-			// operation with
-			// '&' after other replacements are done
-			String temp_pattern = "zzzzzzzzzz123z";
-			text = text.replaceAll("&quot;", "\"").replaceAll("\"", "\\\"").replaceAll("&apos;", "'")
-					.replaceAll("&amp;", temp_pattern).replaceAll("&gt;", ">").replaceAll("&lt;", "<")
-					.replaceAll("&frasl;", "\\/").replaceAll(temp_pattern, "&");
-			return text;
-		}
+	
+	//String builder approach one pass
+	public static class Solution1 {
+	    
+	    /*
+	    Quotation Mark: the entity is &quot; and symbol character is ".
+	Single Quote Mark: the entity is &apos; and symbol character is '.
+	Ampersand: the entity is &amp; and symbol character is &.
+	Greater Than Sign: the entity is &gt; and symbol character is >.
+	Less Than Sign: the entity is &lt; and symbol character is <.
+	Slash: the entity is &frasl; and symbol character is /.
+	    */
+	    public String entityParser(String text) {
+	        Map<String, String> map = new HashMap<>();
+	        map.put("&apos;", "'");
+	        map.put("&gt;", ">");
+	        map.put("&lt;", "<");
+	        map.put("&frasl;", "/");
+	        map.put("&amp;", "&");
+	        map.put("&quot;", "\"");
+	        
+	        StringBuilder ans= new StringBuilder();
+	        int i =0;
+	        int start =0;
+	        int deleteStart =0;
+	        while(i <text.length()){
+	            ans.append(text.charAt(i));
+	           if(text.charAt(i)=='&'){
+	               start = i;
+	               deleteStart = ans.length()-1;
+	           } 
+	            else if(text.charAt(i)==';'&& map.containsKey(text.substring(start, i+1))){
+	                ans.replace(deleteStart, ans.length(),map.get(text.substring(start, i+1)));
+	            }
+	            i++;
+	        }
+	        return ans.toString();
+	    }
+	}
+	
+	// replace all approach
+	public static class Solution2 {
+	    
+	    /*
+	    Quotation Mark: the entity is &quot; and symbol character is ".
+	Single Quote Mark: the entity is &apos; and symbol character is '.
+	Ampersand: the entity is &amp; and symbol character is &.
+	Greater Than Sign: the entity is &gt; and symbol character is >.
+	Less Than Sign: the entity is &lt; and symbol character is <.
+	Slash: the entity is &frasl; and symbol character is /.
+	    */
+	    public String entityParser(String text) {
+	        text = text.replaceAll("&quot;", "\"")
+	        .replaceAll("&apos;", "'")
+	        .replaceAll("&gt;", ">")
+	        .replaceAll("&lt;", "<")
+	        .replaceAll("&frasl;", "/")
+	        .replaceAll("&amp;", "&");
+	        return text;
+	    }
 	}
 }
