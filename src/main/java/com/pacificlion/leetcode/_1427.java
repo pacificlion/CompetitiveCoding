@@ -43,7 +43,7 @@ package com.pacificlion.leetcode;
  * @author pacificlion
  *
  */
-public class PerformStringShifts {
+public class _1427 {
 	public static class Solution {
 		public String stringShift(String s, int[][] shift) {
 	        int shift_len = 0;

@@ -62,7 +62,7 @@ import java.util.List;
  * @author pacificlion
  *
  */
-public class LeftmostColumnWithAtLeastOne {
+public class _1428 {
 	/**
 	 * // This is the BinaryMatrix's API interface. // You should not implement it,
 	 * or speculate about its implementation interface BinaryMatrix { public int

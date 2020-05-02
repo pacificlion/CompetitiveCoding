@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class PerformStringShiftsTest {
+public class _1427Test {
 
-	private static PerformStringShifts.Solution solution;
+	private static _1427.Solution solution;
 
 	private int[][] inputShift1 = {{0,1},{1,2}};
 	private int[][] inputShift2 = {{1,1},{1,1},{0,2},{1,3}};
@@ -20,7 +20,7 @@ public class PerformStringShiftsTest {
 	
 	 @BeforeClass
 	    public static void setup() {
-	        solution = new PerformStringShifts.Solution();
+	        solution = new _1427.Solution();
 	    }
 
 	@Test

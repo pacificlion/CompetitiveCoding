@@ -5,9 +5,9 @@ import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class CountingElementsTest {
+public class _1426Test {
 
-private static CountingElements.Solution solution;
+private static _1426.Solution solution;
 	
 	private int[] input1 = new int[] {1,2,3};
 	private int[] input2 = new int[] {1,1,3,3,5,5,7,7};
@@ -16,7 +16,7 @@ private static CountingElements.Solution solution;
 	
     @BeforeClass
     public static void setup() {
-        solution = new CountingElements.Solution();
+        solution = new _1426.Solution();
     }
 
     @Test

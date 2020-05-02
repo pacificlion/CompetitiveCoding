@@ -54,7 +54,7 @@ import java.util.Arrays;
  * @author pacificlion
  *
  */
-public class CountingElements {
+public class _1426 {
 	public static class Solution {
 	    public int countElements(int[] arr) {
 	        
