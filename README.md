@@ -33,7 +33,7 @@ A repository containing all my competitive coding solutions.
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_202.java), [Python](../master/leetcode/_202.py)|Easy
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_201.java)|Medium| NON_OPTIMUM, Bit Manipulation
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_200.java)|Medium| NON_OPTIMUM
-|155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_155.java)|Easy| Stack, TEST_LEFT
+|155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_155.java)|Easy| Stack, Design
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_146.java)|Medium| Design
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_136.java), [Python](../master/leetcode/_136.py)|Easy | Bit Manipulation
 |124|[Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_124.java)|Hard | Tree, DFS, TEST_LEFT

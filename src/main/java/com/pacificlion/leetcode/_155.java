@@ -21,52 +21,55 @@ package com.pacificlion.leetcode;
  *
  */
 public class _155 {
-	public static class MinStack {
+	public static class Solution {
+		class MinStack {
 
-	    /** initialize your data structure here. */
-	    
-	    int top;
-	    int min=Integer.MAX_VALUE;
-	    MinStack child;
-	    public MinStack() {
-	        
-	    }
-	    
-	    public MinStack(int top, int min, MinStack child){
-	        this.top = top;
-	        this.min = min;
-	        this.child = child;
-	    }
-	    
-	    public void push(int x) {
-	        child = new MinStack(top,min, child);
-	        top = x;
-	        if(min >x) min=x;
-	    }
-	    
-	    public void pop() {
-	        if(child== null){return;}
-	       top = child.top;
-	        min = child.min;
-	        child = child.child;
-	        
-	    }
-	    
-	    public int top() {
-	        return top;
-	    }
-	    
-	    public int getMin() {
-	        return min;
-	    }
+			/** initialize your data structure here. */
+
+			int top;
+			int min = Integer.MAX_VALUE;
+			MinStack child;
+
+			public MinStack() {
+
+			}
+
+			public MinStack(int top, int min, MinStack child) {
+				this.top = top;
+				this.min = min;
+				this.child = child;
+			}
+
+			public void push(int x) {
+				child = new MinStack(top, min, child);
+				top = x;
+				if (min > x)
+					min = x;
+			}
+
+			public void pop() {
+				if (child == null) {
+					return;
+				}
+				top = child.top;
+				min = child.min;
+				child = child.child;
+
+			}
+
+			public int top() {
+				return top;
+			}
+
+			public int getMin() {
+				return min;
+			}
+		}
+
+		/**
+		 * Your MinStack object will be instantiated and called as such: MinStack obj =
+		 * new MinStack(); obj.push(x); obj.pop(); int param_3 = obj.top(); int param_4
+		 * = obj.getMin();
+		 */
 	}
-
-	/**
-	 * Your MinStack object will be instantiated and called as such:
-	 * MinStack obj = new MinStack();
-	 * obj.push(x);
-	 * obj.pop();
-	 * int param_3 = obj.top();
-	 * int param_4 = obj.getMin();
-	 */
 }
