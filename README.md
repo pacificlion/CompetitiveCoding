@@ -23,6 +23,7 @@ A repository containing all my competitive coding solutions.
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1008.java) |Medium|Tree, TEST_LEFT
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_876.java) |Easy|Linked List
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_844.java) |Easy| 
+|771|[Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_771_.java) |Easy| Hash Table
 |678|[Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_678.java) |Medium | String
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_560.java) |Medium | Array, Hash Table, RETRY   
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_543.java) |Easy | Tree/DFS/Recursion, TEST_LEFT

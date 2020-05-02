@@ -9,7 +9,6 @@ public class _200Test {
 	
 	private static _200.Solution1 solution1;
 	private static _200.Solution2 solution2;
-	private static _200.Solution3 solution3;
 
 	private char[][] input1 = { { '1', '1', '1', '1', '0' }, { '1', '1', '0', '1', '0' }, { '1', '1', '0', '0', '0' },
 			{ '0', '0', '0', '0', '0' } };
@@ -47,7 +46,6 @@ public class _200Test {
 	    public static void setup() {
 	        solution1 = new _200.Solution1();
 	        solution2 = new _200.Solution2();
-	        solution3 = new _200.Solution3();
 	    }
 
 	@Test
@@ -62,11 +60,5 @@ public class _200Test {
 		assertEquals(expected1, solution2.numIslands(input1));
 		assertEquals(expected3, solution2.numIslands(input3));
 		assertEquals(expected2, solution2.numIslands(input2));
-	}
-	@Test
-	public void testBruteForce() {
-		assertEquals(expected1, solution3.numIslands(input1));
-		assertEquals(expected3, solution3.numIslands(input3));
-		assertEquals(expected2, solution3.numIslands(input2));
 	}
 }
