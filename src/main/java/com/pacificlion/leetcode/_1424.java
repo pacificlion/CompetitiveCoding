@@ -3,6 +3,8 @@ package com.pacificlion.leetcode;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * 1424. Diagonal Traverse II
@@ -50,11 +52,39 @@ import java.util.List;
  *
  */
 public class _1424 {
-public static class Solution {
+	
+//use arraylist index to store sum
+public static class Solution1 {
+    public int[] findDiagonalOrder(List<List<Integer>> nums) {
+        int row = nums.size();
+        List<ArrayList<Integer>> list = new ArrayList<>();
+        
+        for(int i = row-1; i>=0; i--){
+            for(int j = 0; j< nums.get(i).size(); j++){
+                while(list.size()<=row+nums.get(i).size())list.add(new ArrayList<>());
+                list.get(i+j).add(nums.get(i).get(j));
+            }
+        }
+        
+        ArrayList<Integer> res = new ArrayList<>();
+        for(int i =0 ; i< list.size(); i++){
+           for(Integer val: list.get(i)){
+               res.add(val);
+           }
+        }
+        
+        // convert ArrayList<Integer>  to int[]
+        return res.stream().mapToInt(Integer::intValue).toArray();
+      
+    }
+}
+
+// use hashmap to store sums
+public static class Solution2 {
     public int[] findDiagonalOrder(List<List<Integer>> nums) {
         int row = nums.size();
         int max_sum = 0;
-        HashMap<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
+        Map<Integer, ArrayList<Integer>> hashMap = new HashMap<>();
         
         for(int i = row-1; i>=0; i--){
             for(int j = 0; j< nums.get(i).size(); j++){
@@ -76,4 +106,31 @@ public static class Solution {
       
     }
 }
+
+// treemap based approach
+public static class Solution3 {
+    public int[] findDiagonalOrder(List<List<Integer>> nums) {
+        int row = nums.size();
+          Map<Integer, ArrayList<Integer>> hashMap = new TreeMap<>();
+          
+          for(int i = row-1; i>=0; i--){
+              for(int j = 0; j< nums.get(i).size(); j++){
+                  ArrayList<Integer> arr = hashMap.getOrDefault(i+j, new ArrayList<Integer>());
+                  arr.add(nums.get(i).get(j));
+                  hashMap.put(i+j,arr);
+              }
+          }
+          
+          // appending all arrayList to one arraylist in increasing order of sum
+          ArrayList<Integer> list = new ArrayList<>();
+      
+          for(Map.Entry<Integer, ArrayList<Integer>> entry: hashMap.entrySet()){
+              list.addAll(entry.getValue());
+          }
+          
+          // convert ArrayList<Integer>  to int[]
+          return list.stream().mapToInt(Integer::intValue).toArray(); 
+        
+      }
+  }
 }
