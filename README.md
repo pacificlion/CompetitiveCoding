@@ -43,7 +43,7 @@ A repository containing all my competitive coding solutions.
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_64.java)|Medium| Array, Dynamic Programming
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_55.java)|Medium| Array, Greedy
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_53.java), [Python](../master/leetcode/_53.py)|Easy| Array
-|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_49.java), [Python](../master/python/leetcode/_49.py)|Medium| HashMap
+|49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_49.java), [Python](../master/python/leetcode/_49.py)|Medium| HashMap, Prime Number based Hashing
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_33.java)|Medium| Array, Binary Search
 
 
