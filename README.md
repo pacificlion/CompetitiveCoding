@@ -25,16 +25,16 @@ A repository containing all my competitive coding solutions.
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_347.java)|Medium| HashTable, Heap, Bucket Sort, NON_OPTIMUM
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_283.java), [Python](../master/leetcode/python/_283.py)|Easy|
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_238.java), [Python](../master/leetcode/_238.py)|Easy|Arrays
-|202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_202.java)|Easy
+|202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_202.java), [Python](../master/leetcode/_202.py)|Easy
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_201.java)|Medium| NON_OPTIMUM, Bit Manipulation
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_200.java)|Medium| NON_OPTIMUM
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_155.java)|Easy| Stack, TEST_LEFT
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_146.java)|Medium| Design, NON_OPTIMUM
-|136|[Single Number](https://leetcode.com/problems/single-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_136.java)|Easy | Bit Manipulation
+|136|[Single Number](https://leetcode.com/problems/single-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_136.java), [Python](../master/leetcode/_136.py)|Easy | Bit Manipulation
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_122.java), [Python](../master/python/leetcode/_122.py)|Easy | Greedy
 |64|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_64.java)|Medium| Array, Dynamic Programming
 |55|[Jump Game](https://leetcode.com/problems/jump-game/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_55.java)|Medium| Array, Greedy
-|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_53.java)|Easy| Array
+|53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_53.java), [Python](../master/leetcode/_53.py)|Easy| Array
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_49.java), [Python](../master/python/leetcode/_49.py)|Medium| HashMap
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_33.java)|Medium| Array, Binary Search
 
