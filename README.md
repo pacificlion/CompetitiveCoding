@@ -32,7 +32,7 @@ A repository containing all my competitive coding solutions.
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_283.java), [Python](../master/leetcode/python/_283.py)|Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_278.java)|Easy| Binary Search, INTERACTIVE
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_238.java), [Python](../master/leetcode/_238.py)|Easy|Arrays
-|221|[Maximal Square](https://leetcode.com/problems/maximal-square/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_221.java)|Medium| Dyanamic Programming, NON_OPTIMUM
+|221|[Maximal Square](https://leetcode.com/problems/maximal-square/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_221.java)|Medium| Dyanamic Programming
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_202.java), [Python](../master/leetcode/_202.py)|Easy
 |201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_201.java)|Medium| Brian Kernighans Algorithm, Bit Manipulation
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_200.java)|Medium| DFS, BFS
