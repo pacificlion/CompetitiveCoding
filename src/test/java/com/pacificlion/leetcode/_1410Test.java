@@ -9,6 +9,7 @@ public class _1410Test {
 
 	private static _1410.Solution1 solution1;
 	private static _1410.Solution2 solution2;
+	private static _1410.Solution3 solution3;
 	
 	private String inputString1 = "&amp; is an HTML entity but &ambassador; is not.";
 	private String inputString2 = "and I quote: &quot;...&quot;";
@@ -26,6 +27,7 @@ public class _1410Test {
     public static void setup() {
         solution1 = new _1410.Solution1();
         solution2 = new _1410.Solution2();
+        solution3 = new _1410.Solution3();
     }
 
     @Test
@@ -44,6 +46,15 @@ public class _1410Test {
     	assertEquals(expectedString3, solution2.entityParser(inputString3));
     	assertEquals(expectedString4, solution2.entityParser(inputString4));
     	assertEquals(expectedString5, solution2.entityParser(inputString5));
+    }
+    
+    @Test
+    public void testStackApproach() {
+    	assertEquals(expectedString1, solution3.entityParser(inputString1));
+    	assertEquals(expectedString2, solution3.entityParser(inputString2));
+    	assertEquals(expectedString3, solution3.entityParser(inputString3));
+    	assertEquals(expectedString4, solution3.entityParser(inputString4));
+    	assertEquals(expectedString5, solution3.entityParser(inputString5));
     }
 
 }

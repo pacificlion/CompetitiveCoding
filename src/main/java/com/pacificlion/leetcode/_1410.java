@@ -2,6 +2,7 @@ package com.pacificlion.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * 1410. HTML Entity Parser
@@ -124,6 +125,66 @@ public class _1410 {
 	        .replaceAll("&frasl;", "/")
 	        .replaceAll("&amp;", "&");
 	        return text;
+	    }
+	}
+	
+	// stack based approach
+	public static class Solution3 {
+	    
+	    /*
+	    Quotation Mark: the entity is &quot; and symbol character is ".
+	Single Quote Mark: the entity is &apos; and symbol character is '.
+	Ampersand: the entity is &amp; and symbol character is &.
+	Greater Than Sign: the entity is &gt; and symbol character is >.
+	Less Than Sign: the entity is &lt; and symbol character is <.
+	Slash: the entity is &frasl; and symbol character is /.
+	    */
+	    public String entityParser(String text) {
+	        Map<String, String> map = new HashMap<>();
+	        map.put("&apos;", "'");
+	        map.put("&gt;", ">");
+	        map.put("&lt;", "<");
+	        map.put("&frasl;", "/");
+	        map.put("&amp;", "&");
+	        map.put("&quot;", "\"");
+	        
+	        Stack<Character> st = new Stack<>();
+	        StringBuilder res= new StringBuilder();
+	        int i =0;
+	        while(i < text.length()){
+	            if(text.charAt(i)==';'){
+	                String temp="";
+	                String temp1="";
+	                while(!st.isEmpty() && st.peek()!='&'){
+	                    temp =st.pop()+temp;
+	                }
+	                
+	                if(!st.isEmpty() && st.peek()=='&'){
+	                    st.pop();
+	                    temp=map.getOrDefault('&'+temp+";", '&'+temp+";");
+	                }
+	                else{
+	                    temp+=";";
+	                }
+	                while(!st.isEmpty()){
+	                 temp1 = st.pop()+temp1;
+	                }
+	                res.append(temp1);
+	                res.append(temp);
+	            }
+	            else{
+	                st.push(text.charAt(i));
+	               
+	            }
+	            i++; 
+	        }
+	        String temp ="";
+	         while(!st.isEmpty()){
+	           temp = st.pop()+temp;
+	         }
+	                
+	        res.append(temp);
+	        return res.toString();
 	    }
 	}
 }
