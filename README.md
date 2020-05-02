@@ -33,8 +33,8 @@ A repository containing all my competitive coding solutions.
 |238|[Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_238.java), [Python](../master/leetcode/_238.py)|Easy|Arrays
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_221.java)|Medium| Dyanamic Programming, NON_OPTIMUM
 |202|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_202.java), [Python](../master/leetcode/_202.py)|Easy
-|201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_201.java)|Medium| NON_OPTIMUM, Bit Manipulation
-|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_200.java)|Medium| NON_OPTIMUM
+|201|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_201.java)|Medium| Brian Kernighans Algorithm, Bit Manipulation
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_200.java)|Medium| DFS, BFS
 |155|[Min Stack](https://leetcode.com/problems/min-stack/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_155.java)|Easy| Stack, Design
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_146.java)|Medium| Design
 |136|[Single Number](https://leetcode.com/problems/single-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_136.java), [Python](../master/leetcode/_136.py)|Easy | Bit Manipulation
