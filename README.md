@@ -10,7 +10,7 @@ A repository containing all my competitive coding solutions.
 |1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1428.java)|Easy| Binary Search, INTERACTIVE
 |1427|[Perform String Shifts](https://leetcode.com/problems/perform-string-shifts/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1427.java)|Easy| Array
 |1426|[Counting Elements](https://leetcode.com/problems/counting-elements/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1426.java), [Python](../master/leetcode/_1426.py)|Easy| Array
-|1424|[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1424_.java)|Medium| Array, Sort, NON_OPTIMUM
+|1424|[Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1424_.java)|Medium| Array, Sort
 |1419|[Minimum Number of Frogs Croaking](https://leetcode.com/problems/minimum-number-of-frogs-croaking/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1419.java) |Medium| String
 |1417|[Reformat the String](https://leetcode.com/problems/reformat-the-string/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1417.java) |Easy|String
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1410.java) |Medium|String, Stack|
