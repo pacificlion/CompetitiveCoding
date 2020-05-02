@@ -16,6 +16,8 @@ A repository containing all my competitive coding solutions.
 |1410|[HTML Entity Parser](https://leetcode.com/problems/html-entity-parser/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1410.java) |Medium|String, Stack, NON_OPTIMUM|
 |1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1409.java) |Medium|Array|
 |1408|[String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1408.java) |Easy|String|
+|1161|[Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1161.java) |Medium|Tree, Graph, TEST_LEFT|
+|1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1160.java) |Easy|Dynamic Programming|
 |1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1143.java) |Medium|Dynamic Programming|
 |1046|[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1046.java) |Easy||
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1008.java) |Medium|Tree, TEST_LEFT
