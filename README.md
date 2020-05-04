@@ -55,3 +55,9 @@ A repository containing all my competitive coding solutions.
 |2|[Princesses And Princes](https://codeforces.com/contest/1327/problem/B)|[Java](../master/src/main/java/com/pacificlion/codeforces/PrincessesAndPrinces.java) |Div 2B, *1300|greedy, graph
 |1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Java](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Div 2A, *1100|math
 
+
+## AtCoder DP contest
+|  #  |      Title     |   Solutions   | Difficulty  | Tag                   
+|-----|----------------|---------------|-------------|-------------
+|B|[Frog 2](https://atcoder.jp/contests/dp/tasks/dp_b)|[Java](../master/src/main/java/com/pacificlion/atcoder/dp/B.java) ||dp
+|A|[Frog 1](https://atcoder.jp/contests/dp/tasks/dp_a)|[Java](../master/src/main/java/com/pacificlion/atcoder/dp/A.java)||dp
