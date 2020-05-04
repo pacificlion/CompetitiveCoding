@@ -63,3 +63,8 @@ A repository containing all my competitive coding solutions.
 |-----|----------------|---------------|-------------|-------------
 |B|[Frog 2](https://atcoder.jp/contests/dp/tasks/dp_b)|[Java](../master/src/main/java/com/pacificlion/atcoder/dp/B.java) ||dp
 |A|[Frog 1](https://atcoder.jp/contests/dp/tasks/dp_a)|[Java](../master/src/main/java/com/pacificlion/atcoder/dp/A.java)||dp
+
+## Hackerearth
+|  #  |      Title     |   Solutions   | Difficulty  | Tag                   
+|-----|----------------|---------------|-------------|-------------
+|1|[Alice and Queries](https://www.hackerearth.com/problem/algorithm/alice-and-queries/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/AliceAndQueries.java) ||Segmented Tree,prefix sum
