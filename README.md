@@ -20,6 +20,7 @@ A repository containing all my competitive coding solutions.
 |1160|[Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1160.java) |Easy|Dynamic Programming|
 |1143|[Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1143.java) |Medium|Dynamic Programming|
 |1046|[Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1046.java) |Easy||
+|1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1009.java) |Easy|Math
 |1008|[Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1008.java) |Medium|Tree, TEST_LEFT
 |876|[Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_876.java) |Easy|Linked List
 |844|[Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_844.java) |Easy| 
@@ -46,6 +47,7 @@ A repository containing all my competitive coding solutions.
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_53.java), [Python](../master/leetcode/_53.py)|Easy| Array
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_49.java), [Python](../master/python/leetcode/_49.py)|Medium| HashMap, Prime Number based Hashing
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_33.java)|Medium| Array, Binary Search
+|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_2.java)|Medium| Linked List, Math
 
 
 ## CodeForces
