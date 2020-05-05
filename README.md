@@ -67,4 +67,5 @@ A repository containing all my competitive coding solutions.
 ## Hackerearth
 |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
 |-----|----------------|---------------|-------------|-------------
-|1|[Alice and Queries](https://www.hackerearth.com/problem/algorithm/alice-and-queries/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/AliceAndQueries.java) ||Segmented Tree,prefix sum
+|2|[Unlock The door](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/name-count/description/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/UnlockTheDoor.java) |Easy|Basic Math, MOD in division not good idea
+|1|[Alice and Queries](https://www.hackerearth.com/problem/algorithm/alice-and-queries/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/AliceAndQueries.java) |Medium|Segmented Tree,prefix sum, NON_OPTIMUM
