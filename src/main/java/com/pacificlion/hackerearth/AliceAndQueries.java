@@ -1,13 +1,15 @@
 package com.pacificlion.hackerearth;
 
-import java.util.Scanner;
 import java.io.PrintWriter;
-import java.util.Map;
-import java.util.Arrays;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
+
+import com.pacificlion.hackerearth.common.FenwickTree;
+import com.pacificlion.hackerearth.common.InputReader;
 
 /**
  * Alice is having an array of N numbers (1-based indexing) and was playing with
@@ -46,16 +48,62 @@ import java.util.TreeMap;
  *
  */
 public class AliceAndQueries {
-	public static class TestClass {
+		public static class TestClass1{
 		public static void main(String[] args) throws Exception {
-			Scanner sc = new Scanner(System.in);
+			InputReader sc = new InputReader(System.in);
 			PrintWriter pw = new PrintWriter(System.out);
+
+			int N = sc.nextInt();
+			int K = sc.nextInt();
+			int[] arr = new int[N];
+			int[] sum = new int[N];
+
+			for (int i = 0; i < N; i++) {
+				arr[i] = sc.nextInt();
+			}
+
+			for (int i = 0; i < K; i++) {
+				int l = sc.nextInt() - 1;
+				int r = sc.nextInt() - 1;
+				sum[l]++;
+				if (r + 1 < N) {
+					sum[r + 1]--;
+				}
+			}
+			
+			int counter =0;
+			for(int i=0; i<N;i++) {
+				counter +=sum[i];
+				sum[i] = counter;
+			}
+
+			Arrays.sort(arr);
+
+			Arrays.sort(sum);
+
+
+			long alice_sum = 0;
+			for (int i = 0; i < N; i++) {
+				alice_sum += 1L * (arr[i] * sum[i]);
+			}
+			pw.println(alice_sum);
+
+			// the end
+			pw.close();
+		}
+	}
+	
+	// fenwick tree based approach
+	public static class TestClass2{
+		public static void main(String[] args) throws Exception {
+			InputReader sc = new InputReader(System.in);
+			PrintWriter pw = new PrintWriter(System.out);
+			FenwickTree ft = new FenwickTree();
 
 			int N = sc.nextInt();
 			int K = sc.nextInt();
 			Integer[] arr = new Integer[N];
 			Integer[] sorted = new Integer[N];
-			Integer[] rearr = new Integer[N];
 			int[] index = new int[N];
 
 			for (int i = 0; i < N; i++) {
@@ -63,6 +111,7 @@ public class AliceAndQueries {
 
 				sorted[i] = arr[i];
 			}
+			int[] BIT = ft.createBinaryTree(arr);
 
 			Arrays.sort(sorted, Collections.reverseOrder());
 			Integer[][] A = new Integer[K][2];
@@ -81,27 +130,78 @@ public class AliceAndQueries {
 			}
 			int h = 0;
 			for (Map.Entry<Integer, List<Integer>> entry : treeMap.entrySet()) {
-				for (Integer val : entry.getValue()) {
-					rearr[val] = sorted[h++];
+				for (Integer ind : entry.getValue()) {
+					ft.updateBinaryTree(BIT, ind + 1, sorted[h++] - arr[ind]);
 				}
-			}
-
-			long[] prefixSum = new long[N + 1];
-			prefixSum[0] = 0;
-			for (int i = 1; i <= N; i++) {
-				prefixSum[i] += prefixSum[i - 1] + rearr[i - 1];
 			}
 
 			long alice_sum = 0;
 			for (int i = 0; i < K; i++) {
-				alice_sum += (prefixSum[A[i][1]] - prefixSum[A[i][0] - 1]);
+				alice_sum += ft.getSum(BIT, A[i][1] - 1) - ft.getSum(BIT, A[i][0] - 2);
 			}
 			pw.println(alice_sum);
 
 			// the end
-			sc.close();
 			pw.close();
 		}
 	}
+	
+	// prefix based approach
+		static class TestClass3 {
+			public static void main(String[] args) throws Exception {
+				InputReader sc = new InputReader(System.in);
+				PrintWriter pw = new PrintWriter(System.out);
 
+				int N = sc.nextInt();
+				int K = sc.nextInt();
+				Integer[] arr = new Integer[N];
+				Integer[] sorted = new Integer[N];
+				Integer[] rearr = new Integer[N];
+				int[] index = new int[N];
+
+				for (int i = 0; i < N; i++) {
+					arr[i] = sc.nextInt();
+
+					sorted[i] = arr[i];
+				}
+
+				Arrays.sort(sorted, Collections.reverseOrder());
+				Integer[][] A = new Integer[K][2];
+				for (int i = 0; i < K; i++) {
+					A[i][0] = sc.nextInt();
+					A[i][1] = sc.nextInt();
+					for (int j = A[i][0] - 1; j < A[i][1]; j++) {
+						index[j]++;
+					}
+				}
+
+				Map<Integer, List<Integer>> treeMap = new TreeMap<>(Collections.reverseOrder());
+				for (int i = 0; i < N; i++) {
+					treeMap.putIfAbsent(index[i], new ArrayList<>());
+					treeMap.get(index[i]).add(i);
+				}
+				int h = 0;
+				for (Map.Entry<Integer, List<Integer>> entry : treeMap.entrySet()) {
+					for (Integer val : entry.getValue()) {
+						rearr[val] = sorted[h++];
+					}
+				}
+
+				long[] prefixSum = new long[N + 1];
+				prefixSum[0] = 0;
+				for (int i = 1; i <= N; i++) {
+					prefixSum[i] += prefixSum[i - 1] + rearr[i - 1];
+				}
+
+				long alice_sum = 0;
+				for (int i = 0; i < K; i++) {
+					alice_sum += (prefixSum[A[i][1]] - prefixSum[A[i][0] - 1]);
+				}
+				pw.println(alice_sum);
+
+				// the end
+				pw.close();
+			}
+		}
+ 
 }
