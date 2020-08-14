@@ -1,11 +1,11 @@
 # Competitive coding
 A repository containing all my competitive coding solutions.
 
-# LeetCode
+## LeetCode
 <details>
   <summary>Click to expand!</summary>
     
-## LeetCode Solutions
+### LeetCode Solutions
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
   |1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1430.java)|Medium| Tree, TEST_LEFT
@@ -54,11 +54,11 @@ A repository containing all my competitive coding solutions.
 
 </details>
 
-# CodeForces
+## CodeForces
 <details>
   <summary>Click to expand!</summary>
   
-## Solutions
+### Solutions
 
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
@@ -66,11 +66,11 @@ A repository containing all my competitive coding solutions.
   |1|[Sum of Odd Integers](https://codeforces.com/contest/1327/problem/A)|[Java](../master/src/main/java/com/pacificlion/codeforces/SumOfOddIntegers.java)|Div 2A, *1100|math
 </details>
 
-# AtCoder
+## AtCoder
 <details>
   <summary>Click to expand!</summary>
   
-## AtCoder DP contest
+### AtCoder DP contest
   
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
@@ -78,14 +78,17 @@ A repository containing all my competitive coding solutions.
   |A|[Frog 1](https://atcoder.jp/contests/dp/tasks/dp_a)|[Java](../master/src/main/java/com/pacificlion/atcoder/dp/A.java)||dp
 </details>
 
-# Hackerearth
+## Hackerearth
 <details>
   <summary>Click to expand!</summary>
   
-## Solutions
+### Solutions
   
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
   |2|[Unlock The door](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/name-count/description/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/UnlockTheDoor.java) |Easy|Basic Math, MOD in division not good idea
   |1|[Alice and Queries](https://www.hackerearth.com/problem/algorithm/alice-and-queries/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/AliceAndQueries.java) |Medium|Fenwick or BIT Tree,prefix sum,sort sum, fast input
 </details>
+
+### Author
+Prashant Singh/[@pacificlion](https://github.com/pacificlion)
