@@ -3,9 +3,8 @@ A repository containing all my competitive coding solutions.
 
 ## LeetCode
 <details>
-  <summary>Click to expand!</summary>
-    
-### LeetCode Solutions
+  <summary>LeetCode Solutions (Click to expand!)</summary>
+  
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
   |1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1430.java)|Medium| Tree, TEST_LEFT
@@ -56,9 +55,7 @@ A repository containing all my competitive coding solutions.
 
 ## CodeForces
 <details>
-  <summary>Click to expand!</summary>
-  
-### Solutions
+  <summary>Solutions (Click to expand!)</summary>
 
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
@@ -68,9 +65,7 @@ A repository containing all my competitive coding solutions.
 
 ## AtCoder
 <details>
-  <summary>Click to expand!</summary>
-  
-### AtCoder DP contest
+  <summary>AtCoder DP contest (Click to expand!)</summary>
   
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
@@ -80,10 +75,8 @@ A repository containing all my competitive coding solutions.
 
 ## Hackerearth
 <details>
-  <summary>Click to expand!</summary>
-  
-### Solutions
-  
+  <summary>Solutions (Click to expand!)</summary>
+
   |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
   |-----|----------------|---------------|-------------|-------------
   |2|[Unlock The door](https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-1/practice-problems/algorithm/name-count/description/)|[Java](../master/src/main/java/com/pacificlion/hackerearth/UnlockTheDoor.java) |Easy|Basic Math, MOD in division not good idea
