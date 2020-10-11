@@ -5,6 +5,7 @@ A repository containing all my competitive coding solutions.
 
 |  #  |      Title     |   Solutions   | Difficulty  | Tag                   
 |-----|----------------|---------------|-------------|-------------
+|1433|[Check If a String Can Break Another String](https://leetcode.com/problems/check-if-a-string-can-break-another-string/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1433.java)|Medium| 
 |1430|[Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1430.java)|Medium| Tree, TEST_LEFT
 |1429|[First Unique Number](https://leetcode.com/problems/first-unique-number/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1429.java)|Medium| Design, Hash Set
 |1428|[Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_1428.java)|Easy| Binary Search, INTERACTIVE
@@ -29,6 +30,7 @@ A repository containing all my competitive coding solutions.
 |560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_560.java) |Medium | Array, Hash Table, RETRY   
 |543|[Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_543.java) |Easy | Tree/DFS/Recursion, TEST_LEFT
 |525|[Contiguous Array](https://leetcode.com/problems/contiguous-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_525.java)|Easy| Hash Table
+|452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_452.java)|Medium| Greedy, Sort
 |347|[Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_347.java)|Medium| HashTable, Heap, Bucket Sort
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_283.java), [Python](../master/leetcode/python/_283.py)|Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_278.java)|Easy| Binary Search, INTERACTIVE
@@ -47,6 +49,7 @@ A repository containing all my competitive coding solutions.
 |53|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_53.java), [Python](../master/leetcode/_53.py)|Easy| Array
 |49|[Group Anagrams](https://leetcode.com/problems/group-anagrams/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_49.java), [Python](../master/python/leetcode/_49.py)|Medium| HashMap, Prime Number based Hashing
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_33.java)|Medium| Array, Binary Search
+|4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_4.java)|Hard| Array, Binary Search, Divide and Conquer,RETRY
 |2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Java](../master/src/main/java/com/pacificlion/leetcode/_2.java)|Medium| Linked List, Math
 
 
